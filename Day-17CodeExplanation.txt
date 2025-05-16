@@ -1,0 +1,59 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+Defining a Class:
+1. class BankAccount:
+   - This line defines a class named BankAccount. A class in Python is a blueprint for creating objects. 
+     Each object created from the class can have its own attributes and methods.
+
+2. def __init__(self, name, balance=0):
+   - This is the constructor method that is automatically called when a new instance of the class is created.
+   - self refers to the instance of the class.
+   - name is a parameter representing the account holder's name.
+   - balance is an optional parameter with a default value of 0, representing the initial balance of the account.
+   - self.name = name and self.balance = balance
+         These lines initialize instance variables name and balance with the values passed to the constructor.
+   - And then displays a message indicating that an account has been created, displaying the account holder's name and initial balance.
+
+Methods 
+1. def deposit(self, amount):
+   - This method allows depositing money into the account.
+   - It checks if the deposit amount is greater than 0 before adding it to the balance.
+   - Prints a message confirming the deposit and showing the new balance.
+
+2. def withdraw(self, amount):
+   - This method allows withdrawing money from the account.
+   - It checks if there are sufficient funds (i.e., if the withdrawal amount is less than or equal to the current balance).
+   - If sufficient, it withdraws the amount from the balance and prints a confirmation message.
+   - If not sufficient, it prints an "Insufficient funds" message.
+
+3. def check_balance(self):
+   - This method prints and returns the current balance of the account.
+
+Main()
+- Creates two users and performs all operations by calling each and every method on them
+
+Starting point:
+- if __name__ == "__main__":
+  - This line checks if the script is being run directly (not imported as a module in another script) and calls main() to execute the program.
+
+What I've learnt:
+- OOPS / OOP stands for Object Oriented Programing System / Object Oriented Programing. So, OOPS is a way of writing program using Clases and Objects.
+  It organizes code by grouping data and behaviour together. This makes code easier to understand, reusable, and scalable.
+  The key concepts or basic building blocks of OOPS are:
+      - Class : Blueprint or template to create objects
+      - Object : Instance of a class 
+      - Inheritance : Child class inherits properties from a parent class
+      - Polymorphism : Same function name can behave differently for different classes
+      - Encapsulation : Hiding private data and providing access only through methods
+      - Abstraction : Hiding complex details and showing only the necessary parts
+- Class: Class is like a blueprint for creating objects, like a idea or design.
+  For example, Car is a class (idea).
+- Object: Object is like an instance of class means real world implementation from blueprint. And the objects (instances) are Fortuner, 
+  Thar, Kia, Maruthi Suziki, Rolls Royce... which are made out using car class, different objects having different things like colour, speed, milage...
+- __init__() method: init method is a special method aka constructor, This method automatically runs when we create an object
+  it is used to initialize the object's atributes.
+
+### Note: In oops, the function which is in the class is not called as function, it is called as 'method' / 'Behaviour'. 
+          Functions inside a class are called methods because they are the "ways" (or methods) by which the object behaves or acts.
+          And the variable which are in class aren't called as variables called as 'attributes' / 'Properties' / 'Characteristics'. 
+          Variables inside a class are called attributes because they "attribute" (i.e., give) certain characteristics to an object.
